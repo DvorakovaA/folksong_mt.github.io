@@ -244,14 +244,34 @@ kbd {
   font-weight: 600;
 }
 
-.word.marked {
+/* Static semantic highlight (pre-coloured from source data) */
+.word.highlighted {
+  text-decoration: underline;
+  text-decoration-color: #7a5af8;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 3px;
+}
+
+/* User annotation: correct translation equivalent */
+.word.marked-correct {
   background: #b8f0c0;
   color: #1a4a1a;
 }
 
-.word.marked.active {
+.word.marked-correct.active {
   background: #78e090;
   outline-color: #2a8a2a;
+}
+
+/* User annotation: wrong / missing translation equivalent */
+.word.marked-wrong {
+  background: #ffc8c8;
+  color: #4a1a1a;
+}
+
+.word.marked-wrong.active {
+  background: #ff9090;
+  outline-color: #aa2222;
 }
 
 /* ── Completion screen ── */
