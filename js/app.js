@@ -2,7 +2,7 @@
 
 // ── State ──────────────────────────────────────────────────────────────────
 let allTexts = [];
-let languages = [];
+let sourceLanguages = [];
 let selectedLanguage = '';
 let currentTextIndex = 0;
 let currentWordIndex = 0;
@@ -22,6 +22,7 @@ const progressLabel    = document.getElementById('progress-label');
 const originalTextEl   = document.getElementById('original-text');
 const translationTextEl= document.getElementById('translation-text');
 const translationHead  = document.getElementById('translation-heading');
+const originalHead     = document.getElementById('original-heading');
 const exportBtn        = document.getElementById('export-btn');
 const exportFinalBtn   = document.getElementById('export-final-btn');
 const changeLangBtn    = document.getElementById('change-lang-btn');
@@ -70,9 +71,9 @@ function exportJSON() {
   URL.revokeObjectURL(url);
 }
 
-// ── Build word spans for a text ────────────────────────────────────────────
+// ── Build word spans for the English translation (left panel) ──────────────
 function renderOriginal(textEntry, langResults) {
-  const words = textEntry.original.split(/\s+/).filter(w => w.length > 0);
+  const words = textEntry.english.split(/\s+/).filter(w => w.length > 0);
   originalTextEl.innerHTML = '';
   words.forEach((word, i) => {
     const span = document.createElement('span');
@@ -109,10 +110,11 @@ function loadText(textIndex, wordIndex) {
 
   songTitle.textContent = text.title;
   progressLabel.textContent = `(${textIndex + 1} / ${allTexts.length})`;
-  translationHead.textContent = `Translation (${selectedLanguage})`;
+  translationHead.textContent = 'Translation (English)';
+  originalHead.textContent = `Original (${selectedLanguage})`;
 
   renderOriginal(text, langResults);
-  translationTextEl.textContent = text.translations[selectedLanguage];
+  translationTextEl.textContent = text.original;
 
   currentWordIndex = wordIndex;
   setActiveWord(currentWordIndex);
@@ -123,23 +125,44 @@ function initResults(lang) {
   results[lang] = allTexts.map(t => ({
     textId: t.id,
     title: t.title,
-    words: t.original.split(/\s+/).filter(w => w.length > 0).map(w => ({
+    words: t.english.split(/\s+/).filter(w => w.length > 0).map(w => ({
       word: w,
       marked: false
     }))
   }));
 }
 
+// ── Load language-specific data file then start/resume evaluation ──────────
+function loadLanguageData(callback) {
+  const langEntry = sourceLanguages.find(l => l.name === selectedLanguage);
+  if (!langEntry) {
+    document.body.innerHTML = `<p style="padding:2rem;color:red">Unknown source language: ${selectedLanguage}. Please reload.</p>`;
+    return;
+  }
+  fetch(langEntry.file)
+    .then(r => r.json())
+    .then(data => {
+      allTexts = data.texts;
+      callback();
+    })
+    .catch(err => {
+      console.error('Failed to load language data:', err);
+      document.body.innerHTML = `<p style="padding:2rem;color:red">Error loading data for ${selectedLanguage}: ${err.message}. Please check the file exists and reload.</p>`;
+    });
+}
+
 // ── Start / resume evaluation ──────────────────────────────────────────────
 function startEvaluation(resume) {
-  if (!resume) {
-    initResults(selectedLanguage);
-    currentTextIndex = 0;
-    currentWordIndex = 0;
-  }
-  showScreen(evalScreen);
-  loadText(currentTextIndex, currentWordIndex);
-  evalScreen.focus();
+  loadLanguageData(() => {
+    if (!resume) {
+      initResults(selectedLanguage);
+      currentTextIndex = 0;
+      currentWordIndex = 0;
+    }
+    showScreen(evalScreen);
+    loadText(currentTextIndex, currentWordIndex);
+    evalScreen.focus();
+  });
 }
 
 // ── Keyboard navigation ────────────────────────────────────────────────────
@@ -234,17 +257,16 @@ backBtn.addEventListener('click', () => {
   resumeNotice.classList.add('hidden');
 });
 
-// ── Bootstrap: fetch data and populate language dropdown ──────────────────
+// ── Bootstrap: fetch manifest and populate language dropdown ──────────────
 fetch('data/texts.json')
   .then(r => r.json())
-  .then(data => {
-    languages = data.languages;
-    allTexts  = data.texts;
+  .then(manifest => {
+    sourceLanguages = manifest.sourceLanguages;
 
-    languages.forEach(lang => {
+    sourceLanguages.forEach(lang => {
       const opt = document.createElement('option');
-      opt.value = lang;
-      opt.textContent = lang;
+      opt.value = lang.name;
+      opt.textContent = lang.name;
       langSelect.appendChild(opt);
     });
   })

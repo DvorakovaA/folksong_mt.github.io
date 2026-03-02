@@ -1,55 +1,7 @@
 {
-  "languages": ["Czech", "Slovak", "German"],
-  "texts": [
-    {
-      "id": 1,
-      "title": "Scarborough Fair",
-      "original": "Are you going to Scarborough Fair? Parsley, sage, rosemary and thyme. Remember me to one who lives there. She once was a true love of mine.",
-      "translations": {
-        "Czech": "Jedete na Scarborough Fair? Petržel, šalvěj, rozmarýn a tymián. Vzpomeňte mě tomu, kdo tam žije. Ona byla kdysi mou pravou láskou.",
-        "Slovak": "Idete na Scarborough Fair? Petržlen, šalvia, rozmarín a tymian. Spomeňte ma tomu, kto tam žije. Ona bola kedysi mojou pravou láskou.",
-        "German": "Gehst du zur Scarborough Fair? Petersilie, Salbei, Rosmarin und Thymian. Grüße von mir jemanden, der dort wohnt. Sie war einst meine wahre Liebe."
-      }
-    },
-    {
-      "id": 2,
-      "title": "Danny Boy",
-      "original": "Oh Danny boy, the pipes, the pipes are calling. From glen to glen, and down the mountain side. The summer's gone, and all the roses falling. It's you, it's you must go and I must bide.",
-      "translations": {
-        "Czech": "Ó Danny boy, dudy, dudy volají. Z doliny do doliny a po horském svahu. Léto odešlo a všechny růže padají. Ty musíš jít a já musím zůstat.",
-        "Slovak": "Ó Danny boy, gajdy, gajdy volajú. Z doliny do doliny a po horskom svahu. Leto odišlo a všetky ruže padajú. Ty musíš ísť a ja musím zostať.",
-        "German": "Oh Danny Boy, die Pfeifen, die Pfeifen rufen. Von Tal zu Tal und den Berghang hinunter. Der Sommer ist vorbei und alle Rosen fallen. Du musst gehen und ich muss bleiben."
-      }
-    },
-    {
-      "id": 3,
-      "title": "The Water Is Wide",
-      "original": "The water is wide, I cannot get over. And neither have I wings to fly. Give me a boat that can carry two. And both shall row, my love and I.",
-      "translations": {
-        "Czech": "Voda je široká, nemohu ji přeplavat. Ani křídla nemám, abych přeletěl. Dejte mi loď, která unese dva. A oba budeme veslovat, má láska a já.",
-        "Slovak": "Voda je široká, nemôžem ju preplavať. Ani krídla nemám, aby som preletel. Dajte mi loď, ktorá unesie dvoch. A obaja budeme vesluvať, moja láska a ja.",
-        "German": "Das Wasser ist breit, ich kann nicht hinüber. Und auch habe ich keine Flügel zum Fliegen. Gebt mir ein Boot, das zwei tragen kann. Und beide sollen rudern, meine Liebe und ich."
-      }
-    },
-    {
-      "id": 4,
-      "title": "Black Is the Color",
-      "original": "Black, black, black is the color of my true love's hair. Her lips are like a rose so fair. She has the sweetest hands and face. And I do love her with all my grace.",
-      "translations": {
-        "Czech": "Černá, černá, černá je barva vlasů mé pravé lásky. Její rty jsou jako krásná růže. Má ta nejsladší ruce a tvář. A já ji miluji celou svou duší.",
-        "Slovak": "Čierna, čierna, čierna je farba vlasov mojej pravej lásky. Jej pery sú ako krásna ruža. Má tie najsladšie ruky a tvár. A ja ju milujem celou svojou dušou.",
-        "German": "Schwarz, schwarz, schwarz ist die Farbe des Haares meiner Liebsten. Ihre Lippen sind wie eine schöne Rose. Sie hat die lieblichsten Hände und das schönste Gesicht. Und ich liebe sie mit meiner ganzen Seele."
-      }
-    },
-    {
-      "id": 5,
-      "title": "Early One Morning",
-      "original": "Early one morning, just as the sun was rising. I heard a maid sing in the valley below. Oh don't deceive me, oh never leave me. How could you use a poor maiden so?",
-      "translations": {
-        "Czech": "Časně ráno, právě když slunce vycházelo. Slyšel jsem dívku zpívat v údolí dole. Ó neklam mě, ó nikdy mě neopouštěj. Jak jsi mohl nakládat s chudou dívkou takhle?",
-        "Slovak": "Skoro ráno, práve keď slnko vychádzalo. Počul som dievča spievať v doline dole. Ó neklamaj ma, ó nikdy ma neopúšťaj. Ako si mohol zaobchádzať s chudobným dievčaťom takto?",
-        "German": "Früh am Morgen, gerade als die Sonne aufging. Hörte ich ein Mädchen im Tal unten singen. Oh, täusch mich nicht, oh verlass mich nie. Wie konntest du ein armes Mädchen so behandeln?"
-      }
-    }
+  "sourceLanguages": [
+    { "name": "Czech", "file": "data/czech.json" },
+    { "name": "Slovak", "file": "data/slovak.json" },
+    { "name": "German", "file": "data/german.json" }
   ]
 }
