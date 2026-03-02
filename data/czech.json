@@ -1,0 +1,35 @@
+{
+  "sourceLanguage": "Czech",
+  "texts": [
+    {
+      "id": 1,
+      "title": "Scarborough Fair",
+      "original": "Jedete na Scarborough Fair? Petržel, šalvěj, rozmarýn a tymián. Vzpomeňte mě tomu, kdo tam žije. Ona byla kdysi mou pravou láskou.",
+      "english": "Are you going to Scarborough Fair? Parsley, sage, rosemary and thyme. Remember me to one who lives there. She once was a true love of mine."
+    },
+    {
+      "id": 2,
+      "title": "Danny Boy",
+      "original": "Ó Danny boy, dudy, dudy volají. Z doliny do doliny a po horském svahu. Léto odešlo a všechny růže padají. Ty musíš jít a já musím zůstat.",
+      "english": "Oh Danny boy, the pipes, the pipes are calling. From glen to glen, and down the mountain side. The summer's gone, and all the roses falling. It's you, it's you must go and I must bide."
+    },
+    {
+      "id": 3,
+      "title": "The Water Is Wide",
+      "original": "Voda je široká, nemohu ji přeplavat. Ani křídla nemám, abych přeletěl. Dejte mi loď, která unese dva. A oba budeme veslovat, má láska a já.",
+      "english": "The water is wide, I cannot get over. And neither have I wings to fly. Give me a boat that can carry two. And both shall row, my love and I."
+    },
+    {
+      "id": 4,
+      "title": "Black Is the Color",
+      "original": "Černá, černá, černá je barva vlasů mé pravé lásky. Její rty jsou jako krásná růže. Má ta nejsladší ruce a tvář. A já ji miluji celou svou duší.",
+      "english": "Black, black, black is the color of my true love's hair. Her lips are like a rose so fair. She has the sweetest hands and face. And I do love her with all my grace."
+    },
+    {
+      "id": 5,
+      "title": "Early One Morning",
+      "original": "Časně ráno, právě když slunce vycházelo. Slyšel jsem dívku zpívat v údolí dole. Ó neklam mě, ó nikdy mě neopouštěj. Jak jsi mohl nakládat s chudou dívkou takhle?",
+      "english": "Early one morning, just as the sun was rising. I heard a maid sing in the valley below. Oh don't deceive me, oh never leave me. How could you use a poor maiden so?"
+    }
+  ]
+}
