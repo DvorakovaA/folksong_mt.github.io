@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Folksong MT Evaluation</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Language selection screen -->
+  <div id="lang-screen" class="screen active">
+    <div class="container">
+      <h1>Folksong MT Evaluation</h1>
+      <p class="subtitle">Evaluate machine translations of folk songs</p>
+      <div class="lang-form">
+        <label for="lang-select">Select a translation language to evaluate:</label>
+        <select id="lang-select">
+          <option value="">-- Choose a language --</option>
+        </select>
+        <button id="start-btn" disabled>Start Evaluation</button>
+      </div>
+      <div id="resume-notice" class="resume-notice hidden">
+        <p>You have a saved session for this language. <button id="resume-btn">Resume</button> or <button id="restart-btn">Start over</button></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Evaluation screen -->
+  <div id="eval-screen" class="screen">
+    <div class="container">
+      <header class="eval-header">
+        <div class="progress-info">
+          <span id="song-title" class="song-title"></span>
+          <span id="progress-label" class="progress-label"></span>
+        </div>
+        <div class="controls-info">
+          <span class="key-hint"><kbd>Tab</kbd> next word</span>
+          <span class="key-hint"><kbd>Enter</kbd> mark word</span>
+          <button id="export-btn" class="export-btn">Export JSON</button>
+          <button id="change-lang-btn" class="change-lang-btn">Change Language</button>
+        </div>
+      </header>
+
+      <div class="panels">
+        <div class="panel">
+          <h2>Original</h2>
+          <div id="original-text" class="text-box"></div>
+        </div>
+        <div class="panel">
+          <h2 id="translation-heading">Translation</h2>
+          <div id="translation-text" class="text-box"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Completion screen -->
+  <div id="done-screen" class="screen">
+    <div class="container">
+      <h1>All Done! 🎉</h1>
+      <p>You have evaluated all the texts for this language.</p>
+      <button id="export-final-btn">Export Results as JSON</button>
+      <button id="back-btn">Evaluate Another Language</button>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+</body>
+</html>
