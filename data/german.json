@@ -5,31 +5,36 @@
       "id": 1,
       "title": "Scarborough Fair",
       "original": "Gehst du zur Scarborough Fair? Petersilie, Salbei, Rosmarin und Thymian. Grüße von mir jemanden, der dort wohnt. Sie war einst meine wahre Liebe.",
-      "english": "Are you going to Scarborough Fair? Parsley, sage, rosemary and thyme. Remember me to one who lives there. She once was a true love of mine."
+      "english": "Are you going to Scarborough Fair? Parsley, sage, rosemary and thyme. Remember me to one who lives there. She once was a true love of mine.",
+      "coloredWords": [4, 5, 6, 8]
     },
     {
       "id": 2,
       "title": "Danny Boy",
       "original": "Oh Danny Boy, die Pfeifen, die Pfeifen rufen. Von Tal zu Tal und den Berghang hinunter. Der Sommer ist vorbei und alle Rosen fallen. Du musst gehen und ich muss bleiben.",
-      "english": "Oh Danny boy, the pipes, the pipes are calling. From glen to glen, and down the mountain side. The summer's gone, and all the roses falling. It's you, it's you must go and I must bide."
+      "english": "Oh Danny boy, the pipes, the pipes are calling. From glen to glen, and down the mountain side. The summer's gone, and all the roses falling. It's you, it's you must go and I must bide.",
+      "coloredWords": [1, 2, 3, 4, 11, 16]
     },
     {
       "id": 3,
       "title": "The Water Is Wide",
       "original": "Das Wasser ist breit, ich kann nicht hinüber. Und auch habe ich keine Flügel zum Fliegen. Gebt mir ein Boot, das zwei tragen kann. Und beide sollen rudern, meine Liebe und ich.",
-      "english": "The water is wide, I cannot get over. And neither have I wings to fly. Give me a boat that can carry two. And both shall row, my love and I."
+      "english": "The water is wide, I cannot get over. And neither have I wings to fly. Give me a boat that can carry two. And both shall row, my love and I.",
+      "coloredWords": [1, 6, 9, 14, 18]
     },
     {
       "id": 4,
       "title": "Black Is the Color",
       "original": "Schwarz, schwarz, schwarz ist die Farbe des Haares meiner Liebsten. Ihre Lippen sind wie eine schöne Rose. Sie hat die lieblichsten Hände und das schönste Gesicht. Und ich liebe sie mit meiner ganzen Seele.",
-      "english": "Black, black, black is the color of my true love's hair. Her lips are like a rose so fair. She has the sweetest hands and face. And I do love her with all my grace."
+      "english": "Black, black, black is the color of my true love's hair. Her lips are like a rose so fair. She has the sweetest hands and face. And I do love her with all my grace.",
+      "coloredWords": [0, 1, 2, 5, 6, 10, 15]
     },
     {
       "id": 5,
       "title": "Early One Morning",
       "original": "Früh am Morgen, gerade als die Sonne aufging. Hörte ich ein Mädchen im Tal unten singen. Oh, täusch mich nicht, oh verlass mich nie. Wie konntest du ein armes Mädchen so behandeln?",
-      "english": "Early one morning, just as the sun was rising. I heard a maid sing in the valley below. Oh don't deceive me, oh never leave me. How could you use a poor maiden so?"
+      "english": "Early one morning, just as the sun was rising. I heard a maid sing in the valley below. Oh don't deceive me, oh never leave me. How could you use a poor maiden so?",
+      "coloredWords": [2, 6, 9, 12, 17]
     }
   ]
 }

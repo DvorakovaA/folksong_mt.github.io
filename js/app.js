@@ -6,7 +6,8 @@ let sourceLanguages = [];
 let selectedLanguage = '';
 let currentTextIndex = 0;
 let currentWordIndex = 0;
-let results = {};   // { language: [ { textId, title, words: [ { word, marked } ] } ] }
+let results = {};   // { language: [ { textId, title, words: [ { word, status } ] } ] }
+// status values: 'not_important' | 'correct' | 'wrong'
 
 // ── DOM refs ───────────────────────────────────────────────────────────────
 const langScreen       = document.getElementById('lang-screen');
@@ -71,17 +72,23 @@ function exportJSON() {
   URL.revokeObjectURL(url);
 }
 
-// ── Build word spans for the English translation (left panel) ──────────────
+// ── Build word spans for the original-language text (left panel) ───────────
 function renderOriginal(textEntry, langResults) {
-  const words = textEntry.english.split(/\s+/).filter(w => w.length > 0);
+  const words = textEntry.original.split(/\s+/).filter(w => w.length > 0);
   originalTextEl.innerHTML = '';
   words.forEach((word, i) => {
     const span = document.createElement('span');
     span.className = 'word';
     span.textContent = word;
     span.dataset.index = i;
-    if (langResults && langResults.words[i] && langResults.words[i].marked) {
-      span.classList.add('marked');
+    // Static pre-coloured words (semantically rich/not) from source data
+    if (textEntry.coloredWords && textEntry.coloredWords.includes(i)) {
+      span.classList.add('highlighted');
+    }
+    if (langResults && langResults.words[i]) {
+      const status = langResults.words[i].status;
+      if (status === 'correct') span.classList.add('marked-correct');
+      else if (status === 'wrong') span.classList.add('marked-wrong');
     }
     originalTextEl.appendChild(span);
     if (i < words.length - 1) {
@@ -114,7 +121,7 @@ function loadText(textIndex, wordIndex) {
   originalHead.textContent = `Original (${selectedLanguage})`;
 
   renderOriginal(text, langResults);
-  translationTextEl.textContent = text.original;
+  translationTextEl.textContent = text.english;
 
   currentWordIndex = wordIndex;
   setActiveWord(currentWordIndex);
@@ -125,9 +132,9 @@ function initResults(lang) {
   results[lang] = allTexts.map(t => ({
     textId: t.id,
     title: t.title,
-    words: t.english.split(/\s+/).filter(w => w.length > 0).map(w => ({
+    words: t.original.split(/\s+/).filter(w => w.length > 0).map(w => ({
       word: w,
-      marked: false
+      status: 'not_important'
     }))
   }));
 }
@@ -170,21 +177,27 @@ document.addEventListener('keydown', handleKey);
 
 function handleKey(e) {
   if (!evalScreen.classList.contains('active')) return;
-  if (e.key === 'Tab') {
+  if (e.key === 'ArrowRight') {
     e.preventDefault();
-    advanceCursor();
+    moveCursor(1);
+  } else if (e.key === 'ArrowLeft') {
+    e.preventDefault();
+    moveCursor(-1);
   } else if (e.key === 'Enter') {
     e.preventDefault();
-    markCurrentWord();
+    markCurrentWord('correct');
+  } else if (e.key === 'Tab') {
+    e.preventDefault();
+    markCurrentWord('wrong');
   }
 }
 
-function advanceCursor() {
+function moveCursor(direction) {
   if (!results[selectedLanguage]) return;
   const spans = getWordSpans();
-  currentWordIndex++;
-  if (currentWordIndex >= spans.length) {
-    // Move to next text
+  const newIndex = currentWordIndex + direction;
+  if (direction > 0 && newIndex >= spans.length) {
+    // Advance to next text
     currentTextIndex++;
     saveProgress();
     if (currentTextIndex >= allTexts.length) {
@@ -194,19 +207,27 @@ function advanceCursor() {
     }
     currentWordIndex = 0;
     loadText(currentTextIndex, currentWordIndex);
+  } else if (direction < 0 && newIndex < 0) {
+    // Don't move before the first word
+    return;
   } else {
+    currentWordIndex = newIndex;
     setActiveWord(currentWordIndex);
     saveProgress();
   }
 }
 
-function markCurrentWord() {
+function markCurrentWord(status) {
   const spans = getWordSpans();
   if (currentWordIndex >= spans.length) return;
   const span = spans[currentWordIndex];
-  span.classList.toggle('marked');
-  results[selectedLanguage][currentTextIndex].words[currentWordIndex].marked =
-    span.classList.contains('marked');
+  const wordResult = results[selectedLanguage][currentTextIndex].words[currentWordIndex];
+  // Toggle off if same status pressed again
+  const newStatus = wordResult.status === status ? 'not_important' : status;
+  span.classList.remove('marked-correct', 'marked-wrong');
+  if (newStatus === 'correct') span.classList.add('marked-correct');
+  else if (newStatus === 'wrong') span.classList.add('marked-wrong');
+  wordResult.status = newStatus;
   saveProgress();
 }
 
