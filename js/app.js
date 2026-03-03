@@ -28,6 +28,7 @@ const exportBtn        = document.getElementById('export-btn');
 const exportFinalBtn   = document.getElementById('export-final-btn');
 const changeLangBtn    = document.getElementById('change-lang-btn');
 const backBtn          = document.getElementById('back-btn');
+const nextSongBtn      = document.getElementById('next-song-btn');
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function showScreen(screen) {
@@ -186,10 +187,23 @@ function handleKey(e) {
   } else if (e.key === 'Enter') {
     e.preventDefault();
     markCurrentWord('correct');
-  } else if (e.key === 'Tab') {
+  } else if (e.key === 'Delete' || e.key === 'Backspace') {
     e.preventDefault();
     markCurrentWord('wrong');
   }
+}
+
+function goToNextSong() {
+  if (!results[selectedLanguage]) return;
+  currentTextIndex++;
+  saveProgress();
+  if (currentTextIndex >= allTexts.length) {
+    clearProgress(selectedLanguage);
+    showScreen(doneScreen);
+    return;
+  }
+  currentWordIndex = 0;
+  loadText(currentTextIndex, currentWordIndex);
 }
 
 function moveCursor(direction) {
@@ -197,16 +211,7 @@ function moveCursor(direction) {
   const spans = getWordSpans();
   const newIndex = currentWordIndex + direction;
   if (direction > 0 && newIndex >= spans.length) {
-    // Advance to next text
-    currentTextIndex++;
-    saveProgress();
-    if (currentTextIndex >= allTexts.length) {
-      clearProgress(selectedLanguage);
-      showScreen(doneScreen);
-      return;
-    }
-    currentWordIndex = 0;
-    loadText(currentTextIndex, currentWordIndex);
+    goToNextSong();
   } else if (direction < 0 && newIndex < 0) {
     // Don't move before the first word
     return;
@@ -267,6 +272,8 @@ restartBtn.addEventListener('click', () => {
 changeLangBtn.addEventListener('click', () => {
   showScreen(langScreen);
 });
+
+nextSongBtn.addEventListener('click', goToNextSong);
 
 exportBtn.addEventListener('click', exportJSON);
 exportFinalBtn.addEventListener('click', exportJSON);
