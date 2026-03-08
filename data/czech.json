@@ -3,38 +3,45 @@
   "texts": [
     {
       "id": 1,
-      "title": "Scarborough Fair",
-      "original": "Jedete na Scarborough Fair? Petržel, šalvěj, rozmarýn a tymián. Vzpomeňte mě tomu, kdo tam žije. Ona byla kdysi mou pravou láskou.",
-      "english": "Are you going to Scarborough Fair? Parsley, sage, rosemary and thyme. Remember me to one who lives there. She once was a true love of mine.",
-      "coloredWords": [3, 4, 5, 7]
+      "title": "Má zlatá Ančička v komůrce spí, Honzíček, holeček připíjel jí",
+      "original": "Má zlatá Ančička v komůrce spí, Honzíček holeček připíjel jí: Ančko mé dítě! tu máte, píte moje zdraví! „Proč pak bych já vaše zdraví pila? když já nejsem žádná vaše milá: Honzíčku dítě, vy mě šidíte!“ – mně pravila. Budeme se soudit u rychtáře, u toho, co bydlí v naší faře: on veme štolu, sváže nás spolu u oltáře. Budeme se spolu milovali, ty budeš šít a já kolíbati: a tak vesele budem u sebe až do smrti.",
+      "english": "My dear Ančička sleeps in the little room, Honzíček the lad was toasting her: Anička, my child! Here you go, drink to my health! \"Why should I drink to your health? When I am not your beloved: Honzíček, child, you are cheating me!\" – she said to me. We will take our case to the mayor, the one who lives in our parsonage: he will take the cassock, tie us together at the altar. We will love each other, you will sew and I will rock the cradle: and so we will happily be together until death.",
+      "coloredWords": []
     },
     {
       "id": 2,
-      "title": "Danny Boy",
-      "original": "Ó Danny boy, dudy, dudy volají. Z doliny do doliny a po horském svahu. Léto odešlo a všechny růže padají. Ty musíš jít a já musím zůstat.",
-      "english": "Oh Danny boy, the pipes, the pipes are calling. From glen to glen, and down the mountain side. The summer's gone, and all the roses falling. It's you, it's you must go and I must bide.",
-      "coloredWords": [1, 2, 3, 4, 10, 15]
+      "title": "Jaké to trápení mám smutný na zemi, bolí mě, bolí hlavička pro mé potěšení",
+      "original": "Jaké to trápení mám smutný na zemi: bolí mě, bolí hlavička pro mé potěšení! Teče voda, teče na ty novy mlejny: což je těžko milovati, co k libosti není! Co k libosti bylo, to mě opustilo; v dalekých širých krajinách mne je zanechalo. Chodil jsem po horách v dalekých krajinách, všude volal jsem: Má milá! kam jsi se poděla? Přijdu v tu krajinu, slyšel jsem novinu, že moje milá zůstává zde tuto hodinu. Andulko má milá! jsi-li tak upřímná, vyjdi ty ven na slovíčko, tvůj milej tě volá! Tuším, tuším, tuším, že já odtud musím: kterou jsem pannu miloval, tu opustit musím. Snadno ji opustím, a když jinou nemám, vyjdu si já na vršíček, na jinou zavolám! Rybičky v hlubinách, ptáčkové v huštinách, a moje zlaté panenky v hlubokých komorách. Kuřátka na hůře, děvčátka v komoře: a vy zlaté panímámy, otevřete dvéře! Dvéře jsou zavřeny, stýblem zastrčeny, a ty zlaté panímámy otevřít nechtějí. Ale se nestarám, výplatu v ruce mám: jen mi nevěstu vydejte, dobře zaplatím vám. Jsem družba zjednaný, k vám posel vyslaný, chci si nevěstu vyplatit tvrdými tolary. Dvéře otevřete, nevěstu vydejte, ať ji odevzdám ženichu, víc neprodlívejte. Nevěsto, pojďte k nám, ať vás ženichu dám: už žádný vás nerozvede, až někdy pán Bůh sám. Už vás nerozvede, ani nerozloučí, až na smrtelné posteli pán Bůh všemohoucí.",
+      "english": "What a torment I have, sad on earth: it hurts me, my head aches for my pleasure! Water flows, flows to the new mills: which is hard to love, which is not delightful! What was delightful has left me; in distant wide lands it has abandoned me. I walked in the mountains in distant lands, everywhere I called: My dear! where have you gone? I come to that land, I heard the news that my dear stays here at this hour. My dear little dove! if you are so sincere, come out for a word, your beloved calls you! I suspect, I suspect, I suspect that I must leave here: the maiden I loved, I must leave her. I will easily leave her, and if I have no other, I will go to a little hill, and call for another! Little fish in the depths, little birds in the thickets, and my golden maidens in deep chambers. Chicks on the hill, girls in the chamber: and you golden maidens, open the door! The door is closed, stuffed with straw, and the golden maidens do not want to open it. But I do not care, I have payment in my hand: just give me the bride, I will pay you well. I am a promised friend, a messenger sent to you, I want to pay for the bride with hard thalers. Open the door, give out the bride, so I can hand her over to the groom, do not delay any longer. Bride, come to us, so I can give you to the groom: no one will separate you anymore, until the Lord God Himself. No one will separate you anymore, nor part you, except on the deathbed by the Almighty God.",
+      "coloredWords": []
     },
     {
       "id": 3,
-      "title": "The Water Is Wide",
-      "original": "Voda je široká, nemohu ji přeplavat. Ani křídla nemám, abych přeletěl. Dejte mi loď, která unese dva. A oba budeme veslovat, má láska a já.",
-      "english": "The water is wide, I cannot get over. And neither have I wings to fly. Give me a boat that can carry two. And both shall row, my love and I.",
-      "coloredWords": [0, 5, 8, 12, 17]
+      "title": "Och tatíčku, vstávejte, och můj tatíčku, z hrobu vstávejte",
+      "original": "Požehnání sirotě. Och tatíčku, vstávejte! och můj tatíčku! z hrobu vstávejte, požehnání nám dejte. Och mamičko, vstávejtel och má mamičko! z hrobu vstávejte, požehnání nám dejte. „Dcero, dcero, nevolej! 1) och má dcero! na ně nevolej, 2) těžkosti mi nedělej. Jsem od tebe daleko, och jsem od tebe tuze daleko, ležím v hrobě hlyboko!“ Z Klatovska. 1) Synu, synu nevolej! 2) Och má dcero, na nás nevolej atd.",
+      "english": "Blessing to the orphan. Oh father, get up! Oh my father! Rise from the grave, give us your blessing. Oh mother, get up! Oh my mother! Rise from the grave, give us your blessing. \"Daughter, daughter, do not call! 1) Oh my daughter! Do not call on them, 2) do not cause me trouble. I am far from you, oh I am very far from you, lying deep in the grave!\" From the Klatovy region. 1) Son, son, do not call! 2) Oh my daughter, do not call on us, etc.",
+      "coloredWords": []
     },
     {
       "id": 4,
-      "title": "Black Is the Color",
-      "original": "Černá, černá, černá je barva vlasů mé pravé lásky. Její rty jsou jako krásná růže. Má ta nejsladší ruce a tvář. A já ji miluji celou svou duší.",
-      "english": "Black, black, black is the color of my true love's hair. Her lips are like a rose so fair. She has the sweetest hands and face. And I do love her with all my grace.",
-      "coloredWords": [0, 1, 2, 4, 5, 8, 14]
+      "title": "Já mám holubičku, můj zlatej Jeníčku, já mám holubičku, mám",
+      "original": "Já mám holubičku, můj zlatej Jeníčku! já mám holubičku, mám: přijď ke mně, můj milý, až se den nachýlí, já ti holubičku, můj zlatej Jeníčku! já ti holubičku dám.",
+      "english": "I have a little dove, my dear Jeníček! I have a little dove, I do: come to me, my dear, when the day fades, I will give you a little dove, my dear Jeníček! I will give you a little dove.",
+      "coloredWords": []
     },
     {
       "id": 5,
-      "title": "Early One Morning",
-      "original": "Časně ráno, právě když slunce vycházelo. Slyšel jsem dívku zpívat v údolí dole. Ó neklam mě, ó nikdy mě neopouštěj. Jak jsi mohl nakládat s chudou dívkou takhle?",
-      "english": "Early one morning, just as the sun was rising. I heard a maid sing in the valley below. Oh don't deceive me, oh never leave me. How could you use a poor maiden so?",
-      "coloredWords": [1, 4, 7, 9, 13]
+      "title": "Co jsem se nažala, snopů navázala na tom našem dvoře, ičko musím jíti",
+      "original": "Co jsem se nažála, snopů navázala na tom našem dvoře: ičko muším jití, ´šečko vopustiti – to mám nejvíc hoře!",
+      "english": "How many sheaves I tied up in our yard: I have to go to milking, leave everything – that’s what I dread the most!",
+      "coloredWords": []
+    },
+    {
+      "id": 6,
+      "title": "Až z toho Spáňova pudu, což já se vohlížet budu, vohlídnu se jednú, dvakrát",
+      "original": "Až z toho Spáňova pudu, což já se vohlížet budu: vohlídnu se jednu, dvakrát, po třetí už budu plakat. Má zlatá Spáňovská cesto, což je mně po tobě teskno: ne tak po tě, má cestičko, ako po tě, má hubičko! Mý zlaty Spáňovsky hory, což mě má hlavička bolí: bolí, bolí, pobolívá, že mně chlapec vodpovídá.",
+      "english": "From that Spáňov instinct, which I will watch over: I will watch once, twice, the third time I will already cry. My golden Spáňov path, how I long for you: not so much for you, my little path, as for you, my little mouth! My golden Spáňov mountains, how my little head aches: it aches, aches, aches slightly because the boy answers me.",
+      "coloredWords": []
     }
   ]
 }
