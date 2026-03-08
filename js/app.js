@@ -29,6 +29,7 @@ const exportFinalBtn   = document.getElementById('export-final-btn');
 const changeLangBtn    = document.getElementById('change-lang-btn');
 const backBtn          = document.getElementById('back-btn');
 const nextSongBtn      = document.getElementById('next-song-btn');
+const starRatingEl     = document.getElementById('star-rating');
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function showScreen(screen) {
@@ -111,6 +112,15 @@ function setActiveWord(index) {
   }
 }
 
+// ── Render the star rating widget for the given text index ─────────────────
+function renderStarRating(textIndex) {
+  const rating = results[selectedLanguage][textIndex].overallRating;
+  const stars = Array.from(starRatingEl.querySelectorAll('.star'));
+  stars.forEach((btn, i) => {
+    btn.classList.toggle('selected', rating !== null && i < rating);
+  });
+}
+
 // ── Load a specific text into the evaluation screen ────────────────────────
 function loadText(textIndex, wordIndex) {
   const text = allTexts[textIndex];
@@ -126,6 +136,7 @@ function loadText(textIndex, wordIndex) {
 
   currentWordIndex = wordIndex;
   setActiveWord(currentWordIndex);
+  renderStarRating(textIndex);
 }
 
 // ── Initialise results for a language (fresh) ─────────────────────────────
@@ -133,6 +144,7 @@ function initResults(lang) {
   results[lang] = allTexts.map(t => ({
     textId: t.id,
     title: t.title,
+    overallRating: null,
     words: t.original.split(/\s+/).filter(w => w.length > 0).map(w => ({
       word: w,
       status: 'not_important'
@@ -236,6 +248,33 @@ function markCurrentWord(status) {
   saveProgress();
 }
 
+// ── Star rating interaction ────────────────────────────────────────────────
+if (starRatingEl) {
+  starRatingEl.addEventListener('click', e => {
+    const btn = e.target.closest('.star');
+    if (!btn || !results[selectedLanguage]) return;
+    const value = parseInt(btn.dataset.value, 10);
+    const current = results[selectedLanguage][currentTextIndex].overallRating;
+    // Click the same star again to clear the rating
+    results[selectedLanguage][currentTextIndex].overallRating = current === value ? null : value;
+    renderStarRating(currentTextIndex);
+    saveProgress();
+  });
+
+  starRatingEl.addEventListener('mouseover', e => {
+    const btn = e.target.closest('.star');
+    if (!btn) return;
+    const value = parseInt(btn.dataset.value, 10);
+    Array.from(starRatingEl.querySelectorAll('.star')).forEach((s, i) => {
+      s.classList.toggle('hovered', i < value);
+    });
+  });
+
+  starRatingEl.addEventListener('mouseleave', () => {
+    Array.from(starRatingEl.querySelectorAll('.star')).forEach(s => s.classList.remove('hovered'));
+  });
+}
+
 // ── Language selector logic ────────────────────────────────────────────────
 langSelect.addEventListener('change', () => {
   const lang = langSelect.value;
@@ -278,12 +317,14 @@ nextSongBtn.addEventListener('click', goToNextSong);
 exportBtn.addEventListener('click', exportJSON);
 exportFinalBtn.addEventListener('click', exportJSON);
 
-backBtn.addEventListener('click', () => {
-  showScreen(langScreen);
-  langSelect.value = '';
-  startBtn.disabled = true;
-  resumeNotice.classList.add('hidden');
-});
+if (backBtn) {
+  backBtn.addEventListener('click', () => {
+    showScreen(langScreen);
+    langSelect.value = '';
+    startBtn.disabled = true;
+    resumeNotice.classList.add('hidden');
+  });
+}
 
 // ── Bootstrap: fetch manifest and populate language dropdown ──────────────
 fetch('data/texts.json')
