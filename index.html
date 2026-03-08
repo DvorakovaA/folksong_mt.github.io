@@ -39,7 +39,6 @@
           <span class="key-hint"><kbd>Enter</kbd> correct</span>
           <span class="key-hint"><kbd>Del</kbd>/<kbd>⌫</kbd> wrong</span>
           <button id="export-btn" class="export-btn">Export JSON</button>
-          <button id="next-song-btn" class="next-song-btn">Next song</button>
           <button id="change-lang-btn" class="change-lang-btn">Change Language</button>
         </div>
       </header>
@@ -53,19 +52,28 @@
           <h2 id="translation-heading">Translation (English)</h2>
           <div id="translation-text" class="text-box"></div>
         </div>
+        <!-- Rating whole translation -->
+         <div>
+          
+         </div>
       </div>
+      <!-- Next song button on the right down side from the panels -->
+      <button id="next-song-btn" class="next-song-btn" float>Next song</button>
     </div>
   </div>
 
   <!-- Completion screen -->
   <div id="done-screen" class="screen">
     <div class="container">
-      <h1>All Done! 🎉</h1>
+      <h1>All Done!</h1>
       <p>You have evaluated all the texts for this language.</p>
+      <p>Please now click here on Export Results as JSON and send the file, which would get downloaded,
+        to my email anna.dvorakova332@student.cuni.cz with some of a bit identifying info.</p>
       <button id="export-final-btn">Export Results as JSON</button>
-      <button id="back-btn">Evaluate Another Language</button>
     </div>
   </div>
+
+  <!-- Instructions page -->
 
   <script src="js/app.js"></script>
 </body>

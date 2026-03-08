@@ -2,6 +2,9 @@
   "sourceLanguages": [
     { "name": "Czech", "file": "data/czech.json" },
     { "name": "Slovak", "file": "data/slovak.json" },
-    { "name": "German", "file": "data/german.json" }
+    { "name": "Dutch", "file": "data/dutch.json" },
+    { "name": "Ukrainian", "file": "data/ukrainian.json" },
+    { "name": "Estonian", "file": "data/estonian.json" },
+    { "name": "Korean", "file": "data/korean.json" }
   ]
 }
