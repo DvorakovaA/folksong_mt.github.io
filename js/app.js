@@ -76,25 +76,35 @@ function exportJSON() {
 
 // ── Build word spans for the original-language text (left panel) ───────────
 function renderOriginal(textEntry, langResults) {
-  const words = textEntry.original.split(/\s+/).filter(w => w.length > 0);
+  // Split on <br> tags first so they become real line breaks, then tokenise each segment
+  const parts = textEntry.original.split(/<br\s*\/?>/gi);
   originalTextEl.innerHTML = '';
-  words.forEach((word, i) => {
-    const span = document.createElement('span');
-    span.className = 'word';
-    span.textContent = word;
-    span.dataset.index = i;
-    // Static pre-coloured words (semantically rich/not) from source data
-    if (textEntry.coloredWords && textEntry.coloredWords.includes(i)) {
-      span.classList.add('highlighted');
-    }
-    if (langResults && langResults.words[i]) {
-      const status = langResults.words[i].status;
-      if (status === 'correct') span.classList.add('marked-correct');
-      else if (status === 'wrong') span.classList.add('marked-wrong');
-    }
-    originalTextEl.appendChild(span);
-    if (i < words.length - 1) {
-      originalTextEl.appendChild(document.createTextNode(' '));
+  let wordIndex = 0;
+  parts.forEach((part, partIndex) => {
+    const words = part.split(/\s+/).filter(w => w.length > 0);
+    words.forEach((word, wIndex) => {
+      const span = document.createElement('span');
+      span.className = 'word';
+      span.textContent = word;
+      span.dataset.index = wordIndex;
+      // Static pre-coloured words (semantically rich/not) from source data
+      if (textEntry.coloredWords && textEntry.coloredWords.includes(wordIndex)) {
+        span.classList.add('highlighted');
+      }
+      if (langResults && langResults.words[wordIndex]) {
+        const status = langResults.words[wordIndex].status;
+        if (status === 'correct') span.classList.add('marked-correct');
+        else if (status === 'wrong') span.classList.add('marked-wrong');
+      }
+      originalTextEl.appendChild(span);
+      if (wIndex < words.length - 1) {
+        originalTextEl.appendChild(document.createTextNode(' '));
+      }
+      wordIndex++;
+    });
+    // Insert a real <br> element between segments (not after the last one)
+    if (partIndex < parts.length - 1) {
+      originalTextEl.appendChild(document.createElement('br'));
     }
   });
 }
@@ -132,7 +142,14 @@ function loadText(textIndex, wordIndex) {
   originalHead.textContent = `Original (${selectedLanguage})`;
 
   renderOriginal(text, langResults);
-  translationTextEl.textContent = text.english;
+  // Build translation using DOM nodes so <br> tags are handled safely
+  translationTextEl.innerHTML = '';
+  text.english.split(/<br\s*\/?>/gi).forEach((part, index, arr) => {
+    translationTextEl.appendChild(document.createTextNode(part));
+    if (index < arr.length - 1) {
+      translationTextEl.appendChild(document.createElement('br'));
+    }
+  });
 
   currentWordIndex = wordIndex;
   setActiveWord(currentWordIndex);
@@ -145,10 +162,12 @@ function initResults(lang) {
     textId: t.id,
     title: t.title,
     overallRating: null,
-    words: t.original.split(/\s+/).filter(w => w.length > 0).map(w => ({
-      word: w,
-      status: 'not_important'
-    }))
+    words: t.original.split(/<br\s*\/?>/gi)
+      .flatMap(part => part.split(/\s+/).filter(w => w.length > 0))
+      .map(w => ({
+        word: w,
+        status: 'not_important'
+      }))
   }));
 }
 
