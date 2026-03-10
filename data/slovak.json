@@ -4,37 +4,9 @@
     {
       "id": 1,
       "title": "Scarborough Fair",
-      "original": "Idete na Scarborough Fair? Petržlen, šalvia, rozmarín a tymian. Spomeňte ma tomu, kto tam žije. Ona bola kedysi mojou pravou láskou.",
-      "english": "Are you going to Scarborough Fair? Parsley, sage, rosemary and thyme. Remember me to one who lives there. She once was a true love of mine.",
-      "coloredWords": [3, 4, 5, 7]
-    },
-    {
-      "id": 2,
-      "title": "Danny Boy",
-      "original": "Ó Danny boy, gajdy, gajdy volajú. Z doliny do doliny a po horskom svahu. Leto odišlo a všetky ruže padajú. Ty musíš ísť a ja musím zostať.",
-      "english": "Oh Danny boy, the pipes, the pipes are calling. From glen to glen, and down the mountain side. The summer's gone, and all the roses falling. It's you, it's you must go and I must bide.",
-      "coloredWords": [1, 2, 3, 4, 10, 15]
-    },
-    {
-      "id": 3,
-      "title": "The Water Is Wide",
-      "original": "Voda je široká, nemôžem ju preplavať. Ani krídla nemám, aby som preletel. Dajte mi loď, ktorá unesie dvoch. A obaja budeme vesluvať, moja láska a ja.",
-      "english": "The water is wide, I cannot get over. And neither have I wings to fly. Give me a boat that can carry two. And both shall row, my love and I.",
-      "coloredWords": [0, 5, 8, 12, 17]
-    },
-    {
-      "id": 4,
-      "title": "Black Is the Color",
-      "original": "Čierna, čierna, čierna je farba vlasov mojej pravej lásky. Jej pery sú ako krásna ruža. Má tie najsladšie ruky a tvár. A ja ju milujem celou svojou dušou.",
-      "english": "Black, black, black is the color of my true love's hair. Her lips are like a rose so fair. She has the sweetest hands and face. And I do love her with all my grace.",
-      "coloredWords": [0, 1, 2, 4, 5, 9, 14]
-    },
-    {
-      "id": 5,
-      "title": "Early One Morning",
-      "original": "Skoro ráno, práve keď slnko vychádzalo. Počul som dievča spievať v doline dole. Ó neklamaj ma, ó nikdy ma neopúšťaj. Ako si mohol zaobchádzať s chudobným dievčaťom takto?",
-      "english": "Early one morning, just as the sun was rising. I heard a maid sing in the valley below. Oh don't deceive me, oh never leave me. How could you use a poor maiden so?",
-      "coloredWords": [1, 4, 7, 9, 13]
+      "original": "Háju, háju, zelená borievka,<br>či som stará, či som mladá,<br>ešte som panenka.<br><br>Háju, háju, zelený borovec,<br>či som starý, či som mladý,<br>ešte som mládenec.<br><br>Háju, háju, nechytaj mä za ňu,<br>Za tú sukňu potrhanú,<br>nedal si mi na ňu.<br><br>Háju, háju, ja na vŕšku bývam,<br>na zálety nechodievam,<br>len sa odteľ dívam.",
+      "english": "Grove, grove, green juniper,<br> whether I am old or young,<br>I am still a maiden.<br><br>Grove, grove, green pine,  <br>whether I am old or young,  <br>I am still a bachelor.  <br><br>Grove, grove, don't grab me by it,  <br>by that torn skirt,  <br>you didn't give it to me.  <br><br>Grove, grove, I live on the hill,  <br>I don't go on affairs,  <br>I only watch from there.",
+      "coloredWords": []
     }
   ]
 }
