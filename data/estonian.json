@@ -3,9 +3,10 @@
   "texts": [
     {
       "id": 1,
+      "url" : "e000099700006",
       "title": "Title 1",
-      "original": "Ole terve, neitsikene <br>Ole terve kasvamasta <br>Oma au hoidemasta <br>Nüid sa saad saele sõita. <br>Isameestel hüpitada <br>Oleks läind metsast mehele <br>Puu otsast poistelegi <br>Kännu otsast kaasadelle. <br>Puud oleks olnud pulmanaised <br>Kased valged kaasanaised <br>Sööditükk su söömalauda <br>Kanarbik su hoostekarja <br>Põllupeenar istepinki. <br>Nüid sind kaasale kositi. <br>Nüid on sõitnud saekene <br>Piitsaplaksud, peniplaksud <br>Sõitis äia õue alla <br>õitis ämma õue alla <br>Tule ämma, too kasukast <br>Tule vahest vaatamaie <br>Vii see tige teelta <br>Vii see rine reelta <br>Too kui tonti tubaje <br>Ämma silma, ämma kõrva <br>Pilusilma, peni kõrva <br>Kõverkäppa ämma ette <br>Liigu nüid liigu, leekene <br>Anna ruumi ahjukene <br>Tagane tagumine seina <br>Nüid tuleb trummal tubaje <br>Parapantsik põrmandulle, <br>Kui ma tuiskan ja vihastan <br>Võtan kulbi koera eesta <br>Leemevaagna litsi käästa <br>Annan kulbi eide kätte <br>Leemekausi eide rüppe.",
-      "english": "Be healthy, little maiden <br>Be healthy while growing <br>Upkeep your honor <br>Now you may ride the saw. <br>For the men to jump <br>It would have gone from the forest to the man <br>From the tree to the boys <br>From the stump to the companions. <br>The trees would have been the brides <br>The white birches the bridesmaids <br>The feeding piece your eating board <br>Heather your feeding flock <br>The garden patch a bench. <br>Now you are courted as a companion. <br>Now the little saw has ridden <br>Whip taps, whip slaps <br>Rode under the father-in-law’s yard <br>Rode under the mother-in-law’s yard <br>Come, mother-in-law, bring the fur coat <br>Come maybe to watch <br>Take that anger from the road <br>Take the grudge from the path <br>Bring it to the devil’s room <br>The mother-in-law’s eye, mother-in-law’s ear <br>The slit eye, the dog’s ear <br>The crooked foot before the mother-in-law <br>Move now, little flame <br>Make way, little stove <br>Step back to the back wall <br>Now here comes the drumming room Parapantsik to the ground <br>When I whirl and get angry <br>I take the ladle from the dog <br>I turn the soup dish upside down <br>I give the ladle to the old woman <br>I give the soup bowl to the old woman to drink.",
+      "original": "Ole terve, neitsikene <br>Ole terve kasvamasta <br>Oma au hoidemasta <br>Nüid sa saad saele sõita. <br>Isameestel hüpitada <br><br>Oleks läind metsast mehele <br>Puu otsast poistelegi <br>Kännu otsast kaasadelle. <br><br>Puud oleks olnud pulmanaised <br>Kased valged kaasanaised <br>Sööditükk su söömalauda <br>Kanarbik su hoostekarja <br>Põllupeenar istepinki. <br><br>Nüid sind kaasale kositi. <br>Nüid on sõitnud saekene <br>Piitsaplaksud, peniplaksud <br><br>Sõitis äia õue alla <br>Sõitis ämma õue alla <br>Tule ämma, too kasukast <br>Tule vahest vaatamaie <br>Vii see tige teelta <br>Vii see rine reelta <br>Too kui tonti tubaje <br><br>Ämma silma, ämma kõrva <br>Pilusilma, peni kõrva <br>Kõverkäppa ämma ette <br><br>Liigu nüid liigu, leekene <br>Anna ruumi ahjukene <br>Tagane tagumine seina <br>Nüid tuleb trummal tubaje Parapantsik põrmandulle, <br><br>Kui ma tuiskan ja vihastan <br>Võtan kulbi koera eesta <br>Leemevaagna litsi käästa <br>Annan kulbi eide kätte <br>Leemekausi eide rüppe.",
+      "english": "Be healthy, little maiden <br>Be healthy while growing <br>Upkeep your honor <br>Now you may ride the saw. <br>For the men to jump <br><br>It would have gone from the forest to the man <br>From the tree to the boys <br>From the stump to the companions. <br><br>The trees would have been the brides <br>The white birches the bridesmaids <br>The feeding piece your eating board <br>Heather your feeding flock <br>The garden patch a bench. <br><br>Now you are courted as a companion. <br>Now the little saw has ridden <br>Whip taps, whip slaps <br><br>Rode under the father-in-law’s yard <br>Rode under the mother-in-law’s yard <br>Come, mother-in-law, bring the fur coat <br>Come maybe to watch <br>Take that anger from the road <br>Take the grudge from the path <br>Bring it to the devil’s room <br><br>The mother-in-law’s eye, mother-in-law’s ear <br>The slit eye, the dog’s ear <br>The crooked foot before the mother-in-law <br><br>Move now, little flame <br>Make way, little stove <br>Step back to the back wall <br>Now here comes the drumming room Parapantsik to the ground <br>When I whirl and get angry <br>I take the ladle from the dog <br>I turn the soup dish upside down <br>I give the ladle to the old woman <br>I give the soup bowl to the old woman to drink.",
       "coloredWords": [
         1,
         2,
@@ -90,9 +91,10 @@
     },
     {
       "id": 2,
+      "url": "era203201730004",
       "title": "Kiusulaul pulmas.",
-      "original": "Oh sina sigade saia, <br>Kõige pere pesukappa, <br>Isa, ema kätekappa, <br>Alga aga üles annivakka, <br>Kisu aga üles kiidukerstu, <br>Mis sina mullu kiitelesid <br>Meie küla kiige alla, <br>Meie valla vainuella: <br>\"Oleks mul sada naduda, <br>Oleks mul kümme küdida!\" <br>Naisukesed, kaasukesed, <br>Las siis küsin kannatelles. <br>Kas siis äia annab härja? <br>Kas siis ämma annab lehma? <br>Kas siis küdi annab küüdu? <br>Nadu valgepea vasika? <br>Küll siis äia saaneb särgi, <br>Küll siis ämma saaneb särgi, <br>Küdi soab küüdud searepaelad, <br>Nadu narmikud käiksed. <br>Tasa aga neiut tantsitage <br>Viisipärast veeretage, <br>Korrapärast keerutage, <br>Et ei põru põllepaelad, <br>Ega ei liigu mütsilindid. <br>Ehk on tited tiiva alla, <br>Värdjad vöö vahella, <br>Kasulapsed kaendelassa.",
-      "english": "Oh you pig’s bread, <br>The family’s laundry cupboard, <br>Father, mother’s hand cupboard, <br>Start then to give the gift, <br>Pull then up the praise basket, <br>What did you boast about last year <br>Under our village swing, <br>Under our parish guardian: <br>“If only I had a hundred calves, <br>If only I had ten cows!” <br>Women, companions, <br>Then let me ask patiently. <br>Does the father-in-law give a bull? <br>Does the mother-in-law give a cow? <br>Does the cowherd give a cow? <br>The white-headed calf of the herd? <br>Surely then the father-in-law will get a shirt, <br>Surely then the mother-in-law will get a shirt, <br>The cowherd will have the ribbon of a cowherd’s belt, <br>The herd boy will have her shoes. <br>Softly then, girls, dance <br>Carefully roll to the tune, <br>Spin in order, So the apron ribbons do not snap, <br>Nor do the hatbands move. <br>Maybe the children under the wing, <br>The sacks between the belt, <br>The foster children in the cradle.",
+      "original": "Oh sina sigade saia, <br>Kõige pere pesukappa, <br>Isa, ema kätekappa, <br>Alga aga üles annivakka, <br>Kisu aga üles kiidukerstu, <br><br>Mis sina mullu kiitelesid <br>Meie küla kiige alla, <br>Meie valla vainuella: <br>\"Oleks mul sada naduda, <br>Oleks mul kümme küdida!\" <br><br>Naisukesed, kaasukesed, <br>Las siis küsin kannatelles. <br>Kas siis äia annab härja? <br>Kas siis ämma annab lehma? <br>Kas siis küdi annab küüdu? <br>Nadu valgepea vasika? <br><br>Küll siis äia saaneb särgi, <br>Küll siis ämma saaneb särgi, <br>Küdi soab küüdud searepaelad, <br>Nadu narmikud käiksed. <br><br>Tasa aga neiut tantsitage <br>Viisipärast veeretage, <br>Korrapärast keerutage, <br>Et ei põru põllepaelad, <br>Ega ei liigu mütsilindid. <br>Ehk on tited tiiva alla, <br>Värdjad vöö vahella, <br>Kasulapsed kaendelassa.",
+      "english": "Oh you pig’s bread, <br>The family’s laundry cupboard, <br>Father, mother’s hand cupboard, <br>Start then to give the gift, <br>Pull then up the praise basket, <br><br>What did you boast about last year <br>Under our village swing, <br>Under our parish guardian: <br>“If only I had a hundred calves, <br>If only I had ten cows!” <br><br>Women, companions, <br>Then let me ask patiently. <br>Does the father-in-law give a bull? <br>Does the mother-in-law give a cow? <br>Does the cowherd give a cow? <br>The white-headed calf of the herd? <br><br>Surely then the father-in-law will get a shirt, <br>Surely then the mother-in-law will get a shirt, <br>The cowherd will have the ribbon of a cowherd’s belt, <br>The herd boy will have her shoes. <br><br>Softly then, girls, dance <br>Carefully roll to the tune, <br>Spin in order, <br>So the apron ribbons do not snap, <br>Nor do the hatbands move. <br>Maybe the children under the wing, <br>The sacks between the belt, <br>The foster children in the cradle.",
       "coloredWords": [
         2,
         3,
@@ -176,6 +178,7 @@
     },
     {
       "id": 3,
+      "url": "eys0715340010",
       "title": "Title 3",
       "original": "Peiukene, poisikene <br>Kust oskasid meile tulla? <br>Oskasid üle oraste <br>Märkasid üle mägede <br>Teil olid tulgid tullessagi <br>Keelekoerad kaasassagi.",
       "english": "Little boy, little lad <br>Where did you know to come to us from? <br>You knew to come over the ridges  <br>You noticed over the mountains  <br>You even had torches with you  <br>And tongue dogs as well.",
@@ -196,9 +199,10 @@
     },
     {
       "id": 4,
+      "url": "eys0805620068",
       "title": "Title 4",
-      "original": "<br>Kas need annid, mis ma saanud <br>Või on kinki, mis kingiti <br>Siga oli särsanud sinista <br>Hobu oli pursanud punasta <br>Kas pean pistma pingi alla <br>Või pean laskma laua alla <br>Või viin seasöötijalle <br>Kannan koju karjutsele.",
-      "english": "Are these gifts that I have received, or are they presents that were given? <br>The pig had squealed blue; <br>the horse had burst red. <br>Should I put it under the bench,<br>or should I let it go under the table, <br>or take it to the pig feeder? <br>I carry it home for the shouting.",
+      "original": "Kas need annid, mis ma saanud <br>Või on kinki, mis kingiti <br>Siga oli särsanud sinista <br>Hobu oli pursanud punasta <br><br>Kas pean pistma pingi alla <br>Või pean laskma laua alla <br>Või viin seasöötijalle <br>Kannan koju karjutsele.",
+      "english": "Are these gifts that I have received, or are they presents that were given? <br>The pig had squealed blue; <br>the horse had burst red. <br><br>Should I put it under the bench,<br>or should I let it go under the table, <br>or take it to the pig feeder? <br>I carry it home for the shouting.",
       "coloredWords": [
         0,
         2,
@@ -223,9 +227,10 @@
     },
     {
       "id": 5,
+      "url": "h10102020037",
       "title": "Pulmalugu pruudile",
-      "original": "Õekene, ellakene, <br>Tuo tänna näita välja? <br>Mis sa kukeni kudusid <br>Lauba õhtuni ladusid, <br>Pühapäised pikad päevad, <br>Argipäised söömaajad. <br>Kuo sa peerguda põletasid, <br>Külimitu küünla'aida. <br>Kui põle anda andisida, <br>Anna piuga villusida. <br>Külap ma teel teeksin, <br>Suanikol´lul koorutaksin.",
-      "english": "Little sister, little darling, <br>why do you look like that? <br>Why were you knitting all day until Saturday evening, <br>and working on Sundays, <br>the long days, the everyday meal times? <br>Why did you burn the back of your hand, <br>the candle shed of the village? <br>If you could give a burn, <br>give me blisters with it. <br>On the way to the village, <br>I would peel your skin off.",
+      "original": "Õekene, ellakene, <br>Tuo tänna näita välja? <br>Mis sa kukeni kudusid <br>Lauba õhtuni ladusid, <br>Pühapäised pikad päevad, <br>Argipäised söömaajad. <br><br>Kuo sa peerguda põletasid, <br>Külimitu küünla'aida. <br>Kui põle anda andisida, <br>Anna piuga villusida. <br>Külap ma teel teeksin, <br>Suanikol´lul koorutaksin.",
+      "english": "Little sister, little darling, <br>why do you look like that? <br>Why were you knitting <br>all day until Saturday evening, <br>and working on Sundays, <br>the long days, the everyday meal times? <br><br>Why did you burn the back of your hand, <br>the candle shed of the village? <br>If you could give a burn, <br>give me blisters with it. <br>On the way to the village, <br>I would peel your skin off.",
       "coloredWords": [
         0,
         1,
@@ -259,9 +264,10 @@
     },
     {
       "id": 6,
+      "url": "h21403520012",
       "title": "Title 6",
-      "original": "Neitsikene noorukene <br>Kisu nüid üles kiidukerstu <br>Alga aidast annivakka <br>Mis oled eala teinud <br>Kasu kalli kokku pannud. <br>Mis sa mullu kiitelesid. <br>Kiitsid meie kiige alla <br>Hooplesid oma kodugi. <br>Oleks mul kümme küdida <br>Oleks mul sada naduda <br>Oleks mul viisi vennanaista <br>Kõik mina kataks kangastelle <br>Peidaks pikaje linale. <br>Õbelõnga õmbeleksin Kooksin kuldakroonidesse. <br>Ootage urme undid <br>Kannatage karjakoerad <br>Küll te saate saamasandid <br>Saate õuesed agijad <br>Kerst mul täide kiilitud <br>Kõik mul täide vaalitud <br>Küll siin soab siis äia särgi <br>Äia särgi laia loadi <br>Ämma särki pika pihta <br>Nadu saab käiksed naastulised. <br>Küdi kindad küisilised <br>Kui siin äia annab ärja <br>Ja kui ämma kingib lehma, <br>Küdi siin kingib küidu härja <br>Küll siin anni tahtijaida <br>Laia vöö lunastajaid, <br>Ei ole ärja andijaida <br>Ega lehma kinkijaida.",
-      "english": "A young maiden, a little cat, <br>now praise Kersti.  <br>From the barn to the granary,  <br>What have you done in your youth?  <br>Have you gathered the precious harvest? <br>What did you brag about last year?  <br>You boasted under our swing,  <br>You showed off your home too.  <br>If I had ten dresses,  <br>If I had a hundred calves,  <br>If I had five brothers-in-law,  <br>I would cover them all with textiles,  <br>Hide them in long linen cloth. <br>I would sew fine thread, <br>Spin into golden crowns.  <br>Wait, wolves, wait, <br>Endure, shepherd dogs, <br>You will surely get your shoes, <br>You will get the outdoor coat. <br>Kersti, I have tightened everything, <br>I have woven everything full, <br>Here will be the father-in-law's shirt, <br>The father-in-law's shirt with a wide collar, <br>The mother-in-law's shirt with a long hem, <br>The calves will receive hoof bands. <br>Warm mittens on the fingers, <br>If the father-in-law gives a calf, <br>And if the mother-in-law gives a cow, <br>Warm here a young bull will be given. <br>Here are those who want gifts, <br>Wide belt redeemers, <br>There are no calf givers, <br>Nor cow donors.",
+      "original": "Neitsikene noorukene <br>Kisu nüid üles kiidukerstu <br>Alga aidast annivakka <br>Mis oled eala teinud <br>Kasu kalli kokku pannud. <br>Mis sa mullu kiitelesid. <br>Kiitsid meie kiige alla <br>Hooplesid oma kodugi. <br><br>Oleks mul kümme küdida <br>Oleks mul sada naduda <br>Oleks mul viisi vennanaista <br>Kõik mina kataks kangastelle <br>Peidaks pikaje linale. <br>Õbelõnga õmbeleksin <br>Kooksin kuldakroonidesse. <br><br>Ootage urme undid <br>Kannatage karjakoerad <br>Küll te saate saamasandid <br>Saate õuesed agijad <br>Kerst mul täide kiilitud <br>Kõik mul täide vaalitud <br><br>Küll siin soab siis äia särgi <br>Äia särgi laia loadi <br>Ämma särki pika pihta <br>Nadu saab käiksed naastulised. <br>Küdi kindad küisilised <br>Kui siin äia annab ärja <br>Ja kui ämma kingib lehma, <br>Küdi siin kingib küidu härja <br><br>Küll siin anni tahtijaida <br>Laia vöö lunastajaid, <br>Ei ole ärja andijaida <br>Ega lehma kinkijaida.",
+      "english": "A young maiden, a little cat, <br>now praise Kersti.  <br>From the barn to the granary,  <br>What have you done in your youth?  <br>Have you gathered the precious harvest? <br>What did you brag about last year?  <br>You boasted under our swing,  <br>You showed off your home too.  <br><br>If I had ten dresses,  <br>If I had a hundred calves,  <br>If I had five brothers-in-law,  <br>I would cover them all with textiles,  <br>Hide them in long linen cloth. <br>I would sew fine thread, <br>Spin into golden crowns.  <br><br>Wait, wolves, wait, <br>Endure, shepherd dogs, <br>You will surely get your shoes, <br>You will get the outdoor coat. <br>Kersti, I have tightened everything, <br>I have woven everything full, <br><br>Here will be the father-in-law's shirt, <br>The father-in-law's shirt with a wide collar, <br>The mother-in-law's shirt with a long hem, <br>The calves will receive hoof bands. <br>Warm mittens on the fingers, <br>If the father-in-law gives a calf, <br>And if the mother-in-law gives a cow, <br>Warm here a young bull will be given. <br><br>Here are those who want gifts, <br>Wide belt redeemers, <br>There are no calf givers, <br>Nor cow donors.",
       "coloredWords": [
         0,
         1,
@@ -344,6 +350,35 @@
         117,
         119,
         120
+      ]
+    },
+    {
+      "id": 7,
+      "url": "eys0806530216",
+      "title": "Title 1",
+      "original": "Viidi meilt üks vilgas neiu <br>Toodi meil üks torsuperse <br>Naesed kiitsid põllepõlve <br>Austasid tanualusta Ma olin usin uskumaie <br>Ja olin kaval katsumaie <br>Sest ep' põld põllel parema <br>Tanu all saab haige olla <br>Mütsi all saab mütsakaid",
+      "english": "A lively girl was taken from us  <br>A torsoperse was brought to us  <br>Women praised the apron knee  <br>They respected the threshing floor base  <br>I was diligent in believing  <br>And I was clever in testing  <br>Because it’s not better to have a field on the apron  <br>Under the threshing floor, one can get sick  <br>Under the hat, one can get headaches",
+      "coloredWords": [
+        0,
+        3,
+        4,
+        8,
+        9,
+        10,
+        11,
+        13,
+        16,
+        17,
+        20,
+        21,
+        23,
+        24,
+        25,
+        26,
+        27,
+        30,
+        34,
+        35
       ]
     }
   ]
