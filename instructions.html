@@ -12,22 +12,24 @@
     <div class="container instructions-container">
       <h1>Instructions</h1>
 
-      <!-- ══════════════════════════════════════════════════════════════════
-           Fill in the instruction content below.
-           You can use plain paragraphs, numbered lists, etc.
-           ══════════════════════════════════════════════════════════════════ -->
-
       <div class="instructions-content">
-
-        <h2>Overview</h2>
-        <p><!-- Briefly describe what the annotation task is about. --></p>
-
-        <h2>Step-by-step guide</h2>
-        <ol>
-          <li><!-- Step 1 --></li>
-          <li><!-- Step 2 --></li>
-          <li><!-- Step 3 --></li>
-        </ol>
+        In this annotation task, we are interested in the translation of the overall meaning of folk songs' lyrics.
+        <br>
+      For each word in the original text, decide whether:<br>
+        <ul>
+          <li> It is semantically important and is represented in the English translation (Enter) </li>
+          <li> It is semantically important but is incorrectly represented or not represented at all in the English translation (Del/Backspace)  </li>
+          <li> It is not important (do nothing; just skip it using the arrow keys) </li>
+        </ul>
+        What is a semantically important word? These are words that you consider essential for the content of the given verse. <br>
+        Typically these will be autosemantic parts of speech: nouns, verbs, adjectives, and adverbs. You do not have to overthink this. <br><br>
+        
+        Finally, rate it with 0 to 5 stars (the more stars, the better the translation in terms of conveying the meaning of the text as a whole). <br>
+        <br>
+        Don’t hesitate to just use your intuition when the instructions seem ambiguous. <br>
+        Due to the nature of human languages, 
+        there is no way to make instructions that can be directly applied all the time — your judgment as native speakers (familiar with folksongs) 
+        is the gold standard here.
 
         <h2>Keyboard shortcuts</h2>
         <ul>
@@ -36,11 +38,12 @@
           <li><kbd>Del</kbd> / <kbd>⌫</kbd> – mark the current word as wrongly translated</li>
         </ul>
 
-        <h2>Rating</h2>
-        <p><!-- Explain how the overall star rating should be used. --></p>
-
         <h2>Exporting results</h2>
-        <p><!-- Explain when and how to export the JSON file and where to send it. --></p>
+        Once you annotate all the songs for the chosen language, a page with a big green button saying "Export Results as JSON". <br>
+        Please click on it. <br> 
+        It should start a download of a file named folksong_mt_{language}.json (e.g. folksong_mt_slovak.json). <br>
+        Now, please send that downloaded file to anna.dvorakova332@student.cuni.cz. <br>
+        Thank you!
 
       </div>
       <!-- ══════════════════════════════════════════════════════════════════ -->
