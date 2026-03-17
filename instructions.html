@@ -19,13 +19,15 @@
         <ul>
           <li> It is semantically important and is represented in the English translation (Enter) </li>
           <li> It is semantically important but is incorrectly represented or not represented at all in the English translation (Del/Backspace)  </li>
-          <li> It is not important (do nothing; just skip it using the arrow keys) </li>
+          <li> It is not important for the meaning (do nothing; just skip it using the arrow keys) </li>
         </ul>
         <br>
-        Finally, rate the song translation with 0 to 5 stars (the more stars, the better the translation in terms of conveying the meaning of the text as a whole). <br>
+        Finally, rate the song translation with 0 to 5 stars (the more stars, the better the translation in terms of conveying the meaning of the text as a whole).
         <br><br>
         <i>What is a <b>semantically important</b> word? These are words that you consider essential for the content of the given verse. <br>
         Typically, these will be autosemantic parts of speech: nouns, verbs, adjectives, and adverbs. You do not have to overthink this.</i> <br><br>
+        
+        For 
         
         Don’t hesitate to just use your intuition when the instructions seem ambiguous. <br>
         Due to the nature of human languages, 
@@ -38,16 +40,23 @@
           <li><kbd>Enter</kbd> – mark the current word as correctly translated</li>
           <li><kbd>Del</kbd> / <kbd>⌫</kbd> – mark the current word as wrongly translated/missing in the translation</li>
         </ul>
-
+        The word currently under annotation is coloured yellow. <br>
+        After pressing Enter, the (yellow) word turns green. <br>
+        After pressing Del/Backspace, the (yellow) word turns red. <br>
+        If you do not press any specific key, just the right arrow, the word is annotated as "not important". <br><br>
+        In case you made a mistake, you can simply navigate yourself back to the word with the wrong/missing annotation by pressing the arrow keys 
+        and then by pressing Enter or Del/Backspac you change or remove the annotation (e.g. if a word is marked as green and the Enter is pressed again, the green is deleted
+        and it is now annotated as "not important").
+        <br>
+        
         <h2>Exporting results</h2>
         Once you annotate all the songs for the chosen language, a page with a big green button saying "Export Results as JSON". <br>
         Please click on it. <br> 
-        It should start a download of a file named folksong_mt_{language}.json (e.g. folksong_mt_slovak.json). <br>
+        It should start a download of a file named <i>folksong_mt_{language}.json</i> (e.g. <i>folksong_mt_slovak.json</i>). <br>
         Now, please send that downloaded file to anna.dvorakova332@student.cuni.cz. <br>
         Thank you!
 
       </div>
-      <!-- ══════════════════════════════════════════════════════════════════ -->
 
       <a href="index.html" class="back-to-app-btn">← Back to the app</a>
     </div>
