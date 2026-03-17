@@ -132,6 +132,21 @@ button:active {
 
 .hidden { display: none !important; }
 
+/* Instructions link on the language-selection screen */
+.instructions-link {
+  display: inline-block;
+  padding: 0.5rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #e0d8d0;
+  color: #3a2a1a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.instructions-link:hover { background: #c8c0b8; }
+
 /* ── Evaluation screen ── */
 .eval-header {
   display: flex;
@@ -189,6 +204,21 @@ kbd {
 }
 
 .export-btn:hover { background: #386038; }
+
+/* Instructions button in the eval-screen header */
+.instructions-btn {
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  background: #e0d8d0;
+  color: #3a2a1a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.instructions-btn:hover { background: #c8c0b8; }
 
 .change-lang-btn {
   background: #e0d8d0;
@@ -345,3 +375,54 @@ kbd {
 }
 
 #back-btn:hover { background: #c8c0b8; }
+
+/* ── Instructions page ── */
+.instructions-container {
+  max-width: 760px;
+}
+
+.instructions-content {
+  background: #fff;
+  border: 2px solid #ddd0c0;
+  border-radius: 10px;
+  padding: 2rem 2.5rem;
+  margin-top: 1.5rem;
+  line-height: 1.8;
+}
+
+.instructions-content h2 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #4a3a2a;
+  margin: 1.5rem 0 0.5rem;
+}
+
+.instructions-content h2:first-child {
+  margin-top: 0;
+}
+
+.instructions-content p,
+.instructions-content li {
+  color: #5a4a3a;
+  font-size: 1rem;
+}
+
+.instructions-content ol,
+.instructions-content ul {
+  padding-left: 1.5rem;
+}
+
+.back-to-app-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.55rem 1.4rem;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  background: #e0d8d0;
+  color: #3a2a1a;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+
+.back-to-app-btn:hover { background: #c8c0b8; }
