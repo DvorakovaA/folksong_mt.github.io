@@ -16,7 +16,6 @@ const doneScreen       = document.getElementById('done-screen');
 const langSelect       = document.getElementById('lang-select');
 const startBtn         = document.getElementById('start-btn');
 const resumeNotice     = document.getElementById('resume-notice');
-const resumeBtn        = document.getElementById('resume-btn');
 const restartBtn       = document.getElementById('restart-btn');
 const songTitle        = document.getElementById('song-title');
 const progressLabel    = document.getElementById('progress-label');
@@ -368,37 +367,38 @@ langSelect.addEventListener('change', () => {
   const lang = langSelect.value;
   startBtn.disabled = !lang;
   if (lang && loadProgress(lang)) {
+    startBtn.textContent = 'Resume Evaluation';
     resumeNotice.classList.remove('hidden');
   } else {
+    startBtn.textContent = 'Start Evaluation';
     resumeNotice.classList.add('hidden');
   }
 });
 
 startBtn.addEventListener('click', () => {
   selectedLanguage = langSelect.value;
-  startEvaluation(false);
-});
-
-resumeBtn.addEventListener('click', () => {
-  selectedLanguage = langSelect.value;
   const saved = loadProgress(selectedLanguage);
-  if (!saved) { startEvaluation(false); return; }
-  // Migrate old saved data: ensure new fields exist on each entry
-  results[selectedLanguage] = saved.results.map(entry => ({
-    hallucination: null,
-    unusualLanguage: null,
-    comment: '',
-    ...entry
-  }));
-  currentTextIndex = saved.currentTextIndex;
-  currentWordIndex = saved.currentWordIndex;
-  startEvaluation(true);
+  if (saved) {
+    // Migrate old saved data: ensure new fields exist on each entry
+    results[selectedLanguage] = saved.results.map(entry => ({
+      hallucination: null,
+      unusualLanguage: null,
+      comment: '',
+      ...entry
+    }));
+    currentTextIndex = saved.currentTextIndex;
+    currentWordIndex = saved.currentWordIndex;
+    startEvaluation(true);
+  } else {
+    startEvaluation(false);
+  }
 });
 
 restartBtn.addEventListener('click', () => {
   selectedLanguage = langSelect.value;
   clearProgress(selectedLanguage);
   resumeNotice.classList.add('hidden');
+  startBtn.textContent = 'Start Evaluation';
   startEvaluation(false);
 });
 
