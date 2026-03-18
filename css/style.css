@@ -111,24 +111,23 @@ button:active {
 }
 
 .resume-notice {
-  background: #fff8e8;
-  border: 1px solid #e0c880;
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
   text-align: center;
-  font-size: 0.95rem;
+  margin-top: 0.4rem;
 }
 
-.resume-notice button {
-  padding: 0.35rem 1rem;
-  margin: 0 0.25rem;
-  font-size: 0.9rem;
+#restart-btn {
+  background: none;
+  border: none;
+  color: #7a6a5a;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0.2rem 0.5rem;
 }
 
-#resume-btn  { background: #8b5e3c; color: #fff; }
-#resume-btn:hover  { background: #6e4a2c; }
-#restart-btn { background: #e0e0e0; color: #333; }
-#restart-btn:hover { background: #c8c8c8; }
+#restart-btn:hover {
+  color: #4a3a2a;
+}
 
 .hidden { display: none !important; }
 
