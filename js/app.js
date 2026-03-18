@@ -29,7 +29,11 @@ const exportFinalBtn   = document.getElementById('export-final-btn');
 const changeLangBtn    = document.getElementById('change-lang-btn');
 const backBtn          = document.getElementById('back-btn');
 const nextSongBtn      = document.getElementById('next-song-btn');
+const prevSongBtn      = document.getElementById('prev-song-btn');
 const starRatingEl     = document.getElementById('star-rating');
+const hallucinationGroup = document.getElementById('hallucination-group');
+const unusualLangGroup   = document.getElementById('unusual-lang-group');
+const commentBox         = document.getElementById('comment-box');
 
 // ── Helpers ────────────────────────────────────────────────────────────────
 function showScreen(screen) {
@@ -131,6 +135,24 @@ function renderStarRating(textIndex) {
   });
 }
 
+// ── Render extra questions (hallucination, unusual language, comment) ───────
+function renderExtraQuestions(textIndex) {
+  const entry = results[selectedLanguage][textIndex];
+
+  // Hallucination YES/NO
+  Array.from(hallucinationGroup.querySelectorAll('input[type="radio"]')).forEach(radio => {
+    radio.checked = radio.value === entry.hallucination;
+  });
+
+  // Unusual language Likert
+  Array.from(unusualLangGroup.querySelectorAll('input[type="radio"]')).forEach(radio => {
+    radio.checked = radio.value === entry.unusualLanguage;
+  });
+
+  // Comment
+  commentBox.value = entry.comment || '';
+}
+
 // ── Load a specific text into the evaluation screen ────────────────────────
 function loadText(textIndex, wordIndex) {
   const text = allTexts[textIndex];
@@ -154,6 +176,12 @@ function loadText(textIndex, wordIndex) {
   currentWordIndex = wordIndex;
   setActiveWord(currentWordIndex);
   renderStarRating(textIndex);
+  renderExtraQuestions(textIndex);
+
+  // Show/hide previous song button
+  if (prevSongBtn) {
+    prevSongBtn.classList.toggle('hidden', textIndex === 0);
+  }
 }
 
 // ── Initialise results for a language (fresh) ─────────────────────────────
@@ -162,6 +190,9 @@ function initResults(lang) {
     textId: t.id,
     title: t.title,
     overallRating: null,
+    hallucination: null,
+    unusualLanguage: null,
+    comment: '',
     words: t.original.split(/<br\s*\/?>/gi)
       .flatMap(part => part.split(/\s+/).filter(w => w.length > 0))
       .map(w => ({
@@ -209,6 +240,8 @@ document.addEventListener('keydown', handleKey);
 
 function handleKey(e) {
   if (!evalScreen.classList.contains('active')) return;
+  // Don't intercept keys when user is typing in the comment box
+  if (e.target === commentBox) return;
   if (e.key === 'ArrowRight') {
     e.preventDefault();
     moveCursor(1);
@@ -234,6 +267,17 @@ function goToNextSong() {
     return;
   }
   currentWordIndex = 0;
+  loadText(currentTextIndex, currentWordIndex);
+}
+
+function goToPrevSong() {
+  if (!results[selectedLanguage] || currentTextIndex <= 0) return;
+  currentTextIndex--;
+  saveProgress();
+  // Place cursor at last token of the previous song
+  const prevEntry = results[selectedLanguage][currentTextIndex];
+  const lastWordIndex = Math.max(0, prevEntry.words.length - 1);
+  currentWordIndex = lastWordIndex;
   loadText(currentTextIndex, currentWordIndex);
 }
 
@@ -294,6 +338,31 @@ if (starRatingEl) {
   });
 }
 
+// ── Extra question interactions ────────────────────────────────────────────
+if (hallucinationGroup) {
+  hallucinationGroup.addEventListener('change', e => {
+    if (!results[selectedLanguage]) return;
+    results[selectedLanguage][currentTextIndex].hallucination = e.target.value;
+    saveProgress();
+  });
+}
+
+if (unusualLangGroup) {
+  unusualLangGroup.addEventListener('change', e => {
+    if (!results[selectedLanguage]) return;
+    results[selectedLanguage][currentTextIndex].unusualLanguage = e.target.value;
+    saveProgress();
+  });
+}
+
+if (commentBox) {
+  commentBox.addEventListener('input', () => {
+    if (!results[selectedLanguage]) return;
+    results[selectedLanguage][currentTextIndex].comment = commentBox.value;
+    saveProgress();
+  });
+}
+
 // ── Language selector logic ────────────────────────────────────────────────
 langSelect.addEventListener('change', () => {
   const lang = langSelect.value;
@@ -314,7 +383,13 @@ resumeBtn.addEventListener('click', () => {
   selectedLanguage = langSelect.value;
   const saved = loadProgress(selectedLanguage);
   if (!saved) { startEvaluation(false); return; }
-  results[selectedLanguage] = saved.results;
+  // Migrate old saved data: ensure new fields exist on each entry
+  results[selectedLanguage] = saved.results.map(entry => ({
+    hallucination: null,
+    unusualLanguage: null,
+    comment: '',
+    ...entry
+  }));
   currentTextIndex = saved.currentTextIndex;
   currentWordIndex = saved.currentWordIndex;
   startEvaluation(true);
@@ -332,6 +407,7 @@ changeLangBtn.addEventListener('click', () => {
 });
 
 nextSongBtn.addEventListener('click', goToNextSong);
+if (prevSongBtn) prevSongBtn.addEventListener('click', goToPrevSong);
 
 exportBtn.addEventListener('click', exportJSON);
 exportFinalBtn.addEventListener('click', exportJSON);

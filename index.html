@@ -65,9 +65,34 @@
             <button class="star" data-value="5" aria-label="5 stars" title="5 – Excellent">★</button>
           </div>
         </div>
+        <!-- Hallucination question -->
+        <div class="extra-question">
+          <span class="rating-label">Have you noticed hallucinated words in the English text?</span>
+          <div id="hallucination-group" class="yn-group" role="group" aria-label="Hallucination">
+            <label><input type="radio" name="hallucination" value="yes"> Yes</label>
+            <label><input type="radio" name="hallucination" value="no"> No</label>
+          </div>
+        </div>
+        <!-- Unusual language Likert question -->
+        <div class="extra-question">
+          <span class="rating-label">Rate presence of unusual language (dialect, archaic words, etc.):</span>
+          <div id="unusual-lang-group" class="likert-group" role="group" aria-label="Unusual language">
+            <label><input type="radio" name="unusual-lang" value="none"> None</label>
+            <label><input type="radio" name="unusual-lang" value="barely"> Barely</label>
+            <label><input type="radio" name="unusual-lang" value="significantly"> Significantly</label>
+          </div>
+        </div>
+        <!-- Optional comment -->
+        <div class="extra-question">
+          <span class="rating-label">Optional comment:</span>
+          <textarea id="comment-box" rows="3" placeholder="Leave a comment (optional)"></textarea>
+        </div>
       </div>
-      <!-- Next song button on the right down side from the panels -->
-      <button id="next-song-btn" class="next-song-btn" float>Next song</button>
+      <!-- Navigation buttons -->
+      <div class="song-nav-btns">
+        <button id="prev-song-btn" class="prev-song-btn hidden">Previous song</button>
+        <button id="next-song-btn" class="next-song-btn">Next song</button>
+      </div>
     </div>
   </div>
 
