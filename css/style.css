@@ -253,6 +253,7 @@ kbd {
   font-size: 1.1rem;
   line-height: 1.9;
   min-height: 180px;
+  max-width: 650px;
   word-break: break-word;
 }
 
@@ -325,7 +326,7 @@ kbd {
   display: flex;
   align-items: center;
   gap: 0.35rem;
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: #3a2a1a;
   cursor: pointer;
 }
@@ -334,6 +335,8 @@ kbd {
 .likert-group input[type="radio"] {
   accent-color: #8b5e3c;
   cursor: pointer;
+  width: 1.1rem;
+  height: 1.1rem;
 }
 
 #comment-box {
@@ -342,7 +345,7 @@ kbd {
   padding: 0.5rem 0.75rem;
   border: 2px solid #ddd0c0;
   border-radius: 8px;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-family: inherit;
   color: #2d2d2d;
   background: #faf7f3;
@@ -395,7 +398,7 @@ kbd {
 }
 
 .rating-label {
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: #5a4a3a;
 }
