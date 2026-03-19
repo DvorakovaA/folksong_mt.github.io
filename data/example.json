@@ -1,0 +1,19 @@
+{
+  "sourceLanguage": "Example",
+  "texts": [
+    {
+      "id": 5,
+      "title": "Co jsem se nažala, snopů navázala na tom našem dvoře, ičko musím jíti",
+      "original": "Co jsem se nažála, <br>snopů navázala <br>na tom našem dvoře: <br><br>ičko muším jití, <br>´šečko vopustiti <br>– to mám nejvíc hoře!",
+      "english": "How many sheaves I tied up <br>in our yard: <br><br>I have to go to milking, <br>leave everything <br>– that’s what I dread the most!",
+      "coloredWords": [3, 4, 5, 9, 11, 14, 17, 18, 19]
+    },
+    {
+      "id": 7,
+      "title": "Dycky lidi povídají",
+      "original" : "Dycky lidi povídají, <br>že my nic nemámy: <br>a my mámy na ponebí <br>půl votypky slámy!",
+      "english": "People often say <br>that we have nothing: <br>but we have <br>half a bale of straw in the loft!",
+      "coloredWords" : [0, 1, 2, 6, 9, 11, 13, 14]
+    }
+  ]
+}

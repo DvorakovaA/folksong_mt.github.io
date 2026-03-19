@@ -5,6 +5,7 @@
     { "name": "Dutch", "file": "data/dutch.json" },
     { "name": "Ukrainian", "file": "data/ukrainian.json" },
     { "name": "Estonian", "file": "data/estonian.json" },
-    { "name": "Korean", "file": "data/korean.json" }
+    { "name": "Korean", "file": "data/korean.json" },
+    { "name": "Example", "file": "data/example.json"}
   ]
 }
