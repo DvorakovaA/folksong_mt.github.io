@@ -17,6 +17,7 @@
         We are not interested in rhymes, schema, etc. Translation of each word matters to us in the lyrics context to a reasonable extent (see section examples). <br>
         To evaluate machine translation capability on folk song lyrics, we present you, annotators, with a number of translated songs to evaluate translation on them. 
         <br><br>
+      <h2>Steps:</h2>
       For each word in the original lyrics, decide whether:<br>
         <ul>
           <li> It is semantically important and is represented in the English translation (Enter) </li>
@@ -25,11 +26,14 @@
         </ul>
         <br>
         Finally, three overall questions: <br>
-        Rate the song translation with 0 to 5 stars (the more stars, the better the translation in terms of conveying the meaning of the text as a whole). <br>
-        Answer whether you spot some hallucinated (content bearing) words in the English translation, that were not present in any way in the original. <br>
-        Select the level of presence of unusual language in the song (dialect, archaic words, ...). <br>
-        Optionally, you can add a comment regarding your annotation or the song, etc.
+        <ul>
+          <li> Rate the song translation with 0 to 5 stars (the more stars, the better the translation in terms of conveying the meaning of the text as a whole). </li>
+          <li> Answer whether you spot some hallucinated (content bearing) words in the English translation, that were not present in any way in the original. </li>
+          <li> Select the level of presence of unusual language in the song (dialect, archaic words, ...). </li>
+        </ul>
+        Optionally, you can add a comment regarding your annotation or the song, etc. 
         <br><br>
+        <h2>Details</h2>
         <i>What is a <b>semantically important</b> word? These are words that you consider essential for the content of the given verse. <br>
         Typically, these will be autosemantic parts of speech: nouns, verbs, adjectives, and adverbs. You do not have to overthink this.</i> <br>
         As a sort of helper, we tried to automatically highlight these four parts of speech in the texts; these suggestions are annotated by violet underscore, 
@@ -66,14 +70,14 @@
         Once you annotate all the songs for the chosen language, a page with a big green button saying "Export Results as JSON". <br>
         Please click on it. <br> 
         It should start a download of a file named <i>folksong_mt_{language}.json</i> (e.g. <i>folksong_mt_slovak.json</i>). <br>
-        Now, please send that downloaded file to anna.dvorakova332@student.cuni.cz. <br>
+        Now, please send that downloaded file to <a href="mailto:anna.dvorakova332@student.cuni.cz">. <br>
         Thank you!
 
         <h2>Examples</h2>
-        Czech original: <i>Má zlatá Ančičko</i> <br>
+        Czech original: <i>Má <b>zlatá</b> Ančičko</i> <br>
         (A guy is talking to his beloved girl named Ančička) <br>
-        Literally translated: <i>My golden Ančička</i>
-        Also very fine translations: <i>My dear Ančička</i>
+        Literally translated: <i>My <b>golden</b> Ančička</i> <br>
+        Also very fine translations: <i>My <b>dear</b> Ančička</i>
         <br><br>
         Again, do not hesitate to use your intuition. <br>
         Our goal is to test whether machine translation is already viable for some cross-lingual comparison of this material.
