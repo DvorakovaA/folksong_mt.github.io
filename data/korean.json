@@ -329,7 +329,7 @@
       "url": "gimje-0503",
       "title": "춘향가중",
       "original": "천 통곡 애원성은 단장곡을 시켜서 울음을 운다<br><br>아이고 도련님 참으로 가세<br>지면은 오만은 날이나 일러주고 가오<br>높다란 험상생이 평지가 되면 오실라요<br><br>오도백이 희긋허면 오실테요<br>마도가 가면 오실테요<br><br>못와 오늘 또<br>마주가 가면 오실테요<br>오몽룡 공회라니<br>용 가는데 구름이 가고<br>범 가는데는 바람이 가건마는<br>오냐 오냐 춘향아 <br>식국같이 모진맘 고노라도 놓지 말고<br><br>다시보길 기다려라<br>같은동서 잉게리고 <br>그 중 심청이도 늙어 있더라<br>/소팔",
-      "english": "The wailing plea is expressed through a mourning song, crying out.  <br>Ah, young master, truly the family fate—  <br>Please tell me on which day you will depart.  <br>When the high rugged mountains become plains, will you come?  <br>When the white orchid blooms, will you come?  <br>When the hemp fields ripen, will you come?  <br>If you dont come today,  <br>When the hemp fields ripen, will you come?  <br>Oh Mongryong, is it true?  <br>Where the dragon goes, the clouds go;  <br>Where the tiger goes, the wind follows.  <br>Oh, oh, Chunhyang,  <br>No matter how harsh the world may be, do not let go of your steadfast heart.  <br>Wait to see him again,  <br>Like the same east and west flowing waters,  <br>Among them, even Shim Cheong is growing old.  <br>/So-pal",
+      "english": "The wailing plea is expressed through a mourning song, crying out.  <br>Ah, young master, truly the family fate—  <br>Please tell me on which day you will depart.  <br>When the high rugged mountains become plains, will you come?  <br>When the white orchid blooms, will you come?  <br>When the hemp fields ripen, will you come? <br><br>If you dont come today,  <br>When the hemp fields ripen, will you come?  <br>Oh Mongryong, is it true?  <br>Where the dragon goes, the clouds go;  <br>Where the tiger goes, the wind follows.  <br>Oh, oh, Chunhyang,  <br>No matter how harsh the world may be, do not let go of your steadfast heart.  <br>Wait to see him again,  <br>Like the same east and west flowing waters,  <br>Among them, even Shim Cheong is growing old.  <br>/So-pal",
       "coloredWords": [
         0,
         1,
@@ -422,7 +422,7 @@
       "id": 11,
       "url": "gw.goseong-0903",
       "title": "모심는소리-자진아라리",
-      "original": "아리랑 아리랑 아라리요 아리랑 고개루 넘어간다<br><br><br>심어 주게 심어 주게 심어 주게 <br>원앙의 줄모루만 심어 주게<br><br><br>원앙의 줄모를 못 심으나마 <br><br>한 포기 두 포기만 꽂아 주게 (한구절 빼고)<br><br><br>놀다가 가거라 자다가 가게 <br>저 달이 지도룩만 놀다 가게<br><br><br>넘어 간다 넘어 간다 넘어 가네 <br><br>바다같은 이 논배미 넘어 가네<br><br><br>세월이 갈라면은 너 혼자 가지 <br>아니 가는 청년들은 청년들은 왜 데려 가나",
+      "original": "아리랑 아리랑 아라리요 아리랑 고개루 넘어간다<br><br>심어 주게 심어 주게 심어 주게 <br>원앙의 줄모루만 심어 주게<br><br>원앙의 줄모를 못 심으나마 <br>한 포기 두 포기만 꽂아 주게 (한구절 빼고)<br><br>놀다가 가거라 자다가 가게 <br>저 달이 지도룩만 놀다 가게<br><br>넘어 간다 넘어 간다 넘어 가네 <br>바다같은 이 논배미 넘어 가네<br><br>세월이 갈라면은 너 혼자 가지 <br>아니 가는 청년들은 청년들은 왜 데려 가나",
       "english": "Arirang, Arirang, Arariyo, crossing over Arirang Pass  <br><br>Plant, plant, plant for me  <br>Just plant a mandarin duck's nesting hole for me  <br><br>Even if you can't plant a mandarin duck's nesting hole  <br>Just stick one or two shoots for me (except one verse)  <br><br>Go play and then go  <br>Even the moon only plays a little and then goes  <br><br>Crossing over, crossing over, crossing over  <br>Crossing over this rice field terrace like the sea  <br><br>If time is to pass, you go alone  <br>No, why do they take the young men, the young men?",
       "coloredWords": [
         4,
@@ -468,26 +468,28 @@
       "url": "imsil-0104",
       "title": "논매는소리",
       "original": "에헤야 – 에– 나 헌개로–오다<br>-추야자 깊은 밤을 임없이 어이 뀌리<br><br>-어쩔거나 어쩔거나<br>-듣기도 좋네 듣기도 좋네<br>-방개소리 궁장을 맞추니",
-      "english": "Eheya – Eh – I’m coming back home –  <br>In the deep night, endlessly calling out to you –  <br>What can I do, what can I do –  <br>It sounds so good, it sounds so good –  <br>When the sound of raindrops matches the court music",
+      "english": "Eheya – Eh – I’m coming back home –  <br>In the deep night, endlessly calling out to you –  <br><br>What can I do, what can I do –  <br>It sounds so good, it sounds so good –  <br>When the sound of raindrops matches the court music",
       "coloredWords": [
         0,
-        1,
+        4,
         3,
         5,
         6,
         7,
         8,
-        12,
-        14,
-        16,
-        17
+        9,
+        10,
+        13,
+        15,
+        17,
+        18
       ]
     },
     {
       "id": 13,
       "url": "imsil-0218",
       "title": "신세타령",
-      "original": "어머니는 날 시실제 고사리 나물 잡수싯나<br>고비고비 서러웁내<br>울 어머니는 날 시실제 도라지 나물을 잡수싯나<br>돌고돌고도 챙피허네<br><br>울 어머니 날 여우고 시집살이 못헌다고<br><br>친정에를 들어가면 아버니는 몽뎅이로 쫓아내니<br><br>한강수라 짚은 물에 빠져나 죽어<br><br>너는 죽어 펄펄 나는 봄나비 되어라<br><br>나는 죽어 연꽃되아 연꽃에화 나본듯이 앉어주소<br><br><br>-흥글타령",
+      "original": "어머니는 날 시실제 고사리 나물 잡수싯나<br>고비고비 서러웁내<br>울 어머니는 날 시실제 도라지 나물을 잡수싯나<br>돌고돌고도 챙피허네<br><br>울 어머니 날 여우고 시집살이 못헌다고<br>친정에를 들어가면 아버니는 몽뎅이로 쫓아내니<br><br>한강수라 짚은 물에 빠져나 죽어<br>너는 죽어 펄펄 나는 봄나비 되어라<br>나는 죽어 연꽃되아 연꽃에화 나본듯이 앉어주소<br><br><br>-흥글타령",
       "english": "Did my mother eat bracken greens for me? <br>Bitter, bitter, how sorrowful.  <br>Did my mother eat bellflower root greens for me? <br>Round and round, how ashamed.  <br><br>My mother said I couldn’t bear a daughter-in-law’s life.  <br>When I went to my parents’ house, my father chased me away with a stick.  <br>I drowned in the muddy water of the Han River and died.  <br>You die and become a brightly fluttering spring butterfly.  <br>I die and become a lotus flower, sitting as if a lotus flower had bloomed.  <br><br>– Heunggeul Taryeong",
       "coloredWords": [
         0,
@@ -524,7 +526,7 @@
       "id": 14,
       "url": "dalseong-0507",
       "title": "논매는소리",
-      "original": "에에헤야 오오오헤야<br><br>가자가자 어서가자<br>이수건너 백노가자<br>이중추절이 적막한데<br><br>찰흑같은 우리인생<br>무삼일로 이리되나<br><br>바람강풍 불지마소<br>이슬같은 우리인생",
+      "original": "에에헤야 오오오헤야<br><br>가자가자 어서가자<br>이수건너 백노가자<br>이중추절이 적막한데<br>찰흑같은 우리인생<br>무삼일로 이리되나<br>바람강풍 불지마소<br>이슬같은 우리인생",
       "english": "Eheheya Oooheya  <br><br>Let's go, let's go, hurry up and go  <br>Cross the Lee River, let's go to Baekno  <br>The mid-autumn festival is quiet and still  <br>Our lives are like pitch black darkness  <br>How can it be like this in just a few days?  <br>Please don't blow strong winds  <br>Our lives are like dew",
       "coloredWords": [
         0,
@@ -585,7 +587,7 @@
       "id": 17,
       "url": "changnyeong-0201",
       "title": "논매는소리",
-      "original": "에헤이용 시이여<br><br>가자가자 이 논머리로 어서가자<br><br>한사람이 소리를 하여도 여러사람 합창소리로 해주소<br><br><br>에헤이 가자가자 어서가자<br>앞논 머리로 갈려가야 뒤에 사람도 따라도네<br><br>군아군아 낭군님아 임을 따라 찾아오게<br>가자가자 어서가자 에헤이요<br>논머리로 다가면은 오늘 날에 끝이로다",
+      "original": "에헤이용 시이여<br><br>가자가자 이 논머리로 어서가자 <br>한사람이 소리를 하여도 여러사람 합창소리로 해주소<br><br><br>에헤이 가자가자 어서가자<br>앞논 머리로 갈려가야 뒤에 사람도 따라도네<br><br>군아군아 낭군님아 임을 따라 찾아오게<br>가자가자 어서가자 에헤이요<br>논머리로 다가면은 오늘 날에 끝이로다",
       "english": "Eheiyong siiyeo  <br><br>Let's go, let's go, hurry to the head of the rice field  <br>Even if one person calls out, let it be a chorus of many voices  <br>Ehei, let's go, let's go, hurry up  <br>We must go to the head of the front rice field so those behind can follow  <br>Gun-a gun-a, dear husband, come find your beloved  <br>Let's go, let's go, hurry up, eheiyo  <br>If we reach the head of the rice field, today will come to an end",
       "coloredWords": [
         0,
